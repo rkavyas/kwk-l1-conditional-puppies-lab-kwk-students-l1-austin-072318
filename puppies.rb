@@ -27,13 +27,22 @@ end
 
 
 def some_puppies(nofp, max)
-  if nop < 0.5 max
+  if nop < 0.5max
     puts "good job"
   elsif nop > max
     puts "get back on track"
-end 
+ end 
 end 
  
 
 # BONUS
 # 4. Rachel has decided to track both her puppy allowance AND her cat allowance. Write a method called new_animal accumulation that takes in two arguments - number of puppies and number of cats. As long as she gets zero puppies OR zero cats this method should return "Good job!". If she gets 1 or more puppies AND 1 or more cats it should tell her she should really slow back down!
+
+def new_animal (puppies, cats)
+  if puppies == 0 || cats == 0 
+    puts "good job"
+  elsif puppies >= 1 && cats >= 1
+    puts "slow back down!"
+    
+  end
+end 
